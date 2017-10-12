@@ -22,10 +22,10 @@ public class QuizRecursive {
             // the last letter is euqal to the last letter of the word
             String lastLetter = word.substring(word.length()-1);
             // reduce the word to make it the original word without the last letter
-            
+            String newWord =word.substring(0,word.length()-1);
              
-          
-            return reverseString(word.substring(0,word.length()-1))+lastLetter;
+            // call in the method again with the last word as parameter
+            return reverseString(lastLetter)+newWord;
              
             
             
